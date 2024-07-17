@@ -10,14 +10,10 @@ export class Author {
     name: string;
 
     @Column()
-    dateOfBirth: Date;
-
-    @Column()
     email: string;
 
     @Column()
     phone: string;
-
 
     // TODO: change this to a one-to-many relationship
     @Column()
