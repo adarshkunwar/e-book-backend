@@ -21,5 +21,5 @@ export class Author {
 
     // TODO: change this to a one-to-many relationship
     @Column()
-    book: string[]
+    book: string
 }

@@ -1,5 +1,4 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
-import { Author } from "./Author";
 
 @Entity()
 export class Book {
@@ -10,10 +9,10 @@ export class Book {
     title: string;
 
     @Column()
-    author: Author[];
+    author: string;
 
     // TODO: create a many-to-many relationship
-    @Column()
+    @Column({ type: 'simple-array' })
     genre: string[];
 
     @Column()
